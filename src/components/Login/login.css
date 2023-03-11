@@ -21,7 +21,210 @@ html {
     /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
     font-family: 'Vazirmatn', sans-serif;
     background: #141b2d; /* fallback for old browsers */
-    overflow-x: hidden;
+    overflow: hidden;
+  
+    height: 100%;
+  
+    /* code to make all text unselectable 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; */
+  }
+  
+  /* Disables selector ring */
+  body:not(.user-is-tabbing) button:focus,
+  body:not(.user-is-tabbing) input:focus,
+  body:not(.user-is-tabbing) select:focus,
+  body:not(.user-is-tabbing) textarea:focus {
+    outline: none;
+  }
+  
+  /* ########################################################## */
+  
+  h1 {
+    color: rgb(248, 243, 243);
+    /* font-family: 'Vazirmatn', sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-size: 3vw;
+    /* font-weight: 800; */
+    text-align: center;
+    
+  }
+
+
+  h1:hover {
+    /* color: white; */
+    /* font-family: 'Vazirmatn', sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-size: 3vw;
+    /* font-weight: 800; */
+    text-align: center;
+    /* transform: scale(1.5); */
+    /* transition: all 1s; */
+  }
+  
+  
+  .flex-container {
+    width: 100vw;
+  
+    margin-top: 60px;
+    /* background-color: darkred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-container {
+    width: 500px;
+    height: 350px;
+    
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 500px;
+    height: 450px;
+  
+    margin-top: 5px;
+    padding-top: 20px;
+  
+    border-radius: 12px;
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    background-color: #1f2a40;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+  }
+  
+  .subtitle {
+    font-size: 11px;
+    float: right;
+    color: rgb(177, 177, 177);
+    /* position: relative;*/
+  }
+  
+  input {
+    border: none;
+    border-bottom: solid rgb(143, 143, 143) 1px;
+
+    margin-bottom: 30px;
+    
+    background: none;
+    color: rgba(255, 255, 255, 0.555);
+    
+  
+    height: 35px;
+    width: 200px;
+    transition: all 0.5s ease-out;
+  }
+    
+  input[type="text"]:focus, input[type="password"]:focus {
+
+    border-bottom: 1px solid #7068a0;
+    width: 225px;
+    transition: all 0.25s ease-in;
+
+  }
+
+  .input-wrapper {
+
+    /* width: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    transition: all 0.5s ease-in;
+     
+  }
+
+  .submit-btn {
+    cursor: pointer;
+    
+    border: none;
+    border-radius: 8px;
+    /* box-shadow: 2px 2px 7px #38d39f70; */
+    box-shadow: none;
+    
+    background: #38d39f;
+    color: rgb(248, 243, 243);
+    
+    width: 8vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
+    transition: all 1s;
+  }
+  
+  .submit-btn:hover {
+    color: rgb(255, 255, 255);
+  
+    /* box-shadow: none; */
+    box-shadow: 2px 2px 7px #38d39f70;
+    width: 12%;
+    transition: all 0.75s;
+
+
+
+  }
+
+
+
+
+
+/* input[type="password"] */
+
+/* 
+#1f2a40
+rgb(143, 143, 143)
+*/
+
+
+@media screen and (max-width: 300px) {
+  body {
+    background-color: lightgreen;
+    
+  }
+
+  h1 {
+    /* color: white; */
+    /* font-family: 'Vazirmatn', sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-size: 500px;
+    color: red;
+    /* font-weight: 800; */
+    /* text-align: center; */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Vazirmatn', sans-serif; 
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+
+
+  }
+  
+  body {
+    /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+    font-family: 'Vazirmatn', sans-serif;
+    background: #141b2d; /* fallback for old browsers */
+    overflow: hidden;
   
     height: 100%;
   
@@ -48,8 +251,8 @@ html {
     color: white;
     /* font-family: 'Vazirmatn', sans-serif; */
     /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 3vw;
+    /* font-weight: 800; */
     text-align: center;
   }
   
@@ -57,7 +260,7 @@ html {
     width: 100vw;
   
     margin-top: 60px;
-    
+    /* background-color: darkred; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,7 +278,7 @@ html {
     align-items: center;
   
     width: 500px;
-    height: 350px;
+    height: 450px;
   
     margin-top: 5px;
     padding-top: 20px;
@@ -93,13 +296,13 @@ html {
   .subtitle {
     font-size: 11px;
     float: right;
-    color: rgba(177, 177, 177, 0.3);
+    color: rgb(177, 177, 177);
   }
   
   input {
     border: none;
     border-bottom: solid rgb(143, 143, 143) 1px;
-  
+
     margin-bottom: 30px;
     
     background: none;
@@ -107,6 +310,7 @@ html {
   
     height: 35px;
     width: 300px;
+    transition: all 0.5s;
   }
   
   .submit-btn {
@@ -114,24 +318,21 @@ html {
     
     border: none;
     border-radius: 8px;
-    box-shadow: 2px 2px 7px #38d39f70;
-  
+    /* box-shadow: 2px 2px 7px #38d39f70; */
+    box-shadow: none;
+    
     background: #38d39f;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(248, 243, 243);
   
-    width: 80px;
+    width: 25%;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     transition: all 1s;
   }
-  
-  .submit-btn:hover {
-    color: rgb(255, 255, 255);
-  
-    box-shadow: none;
-  }
-  
+
+
+}

@@ -16,11 +16,15 @@ export default function Login() {
               <br />
               <span className="subtitle" dir='rtl'>نام کاربری</span>
               <br />
+              <div className="input-wrapper">
               <input type="text" name="username" dir='rtl' placeholder='نام کاربری خود را وارد کنید' />
+              </div>
               <br />
               <span className="subtitle" dir='rtl'>کلمه عبور</span>
               <br />
+              <div className="input-wrapper">
               <input type="password" name="password" dir='rtl' placeholder='کلمه عبور خود را وارد کنید' />
+              </div>
               <br /><br />
               <input type="submit" value="ورود" className="submit-btn" />
             </form>
